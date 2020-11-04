@@ -3,6 +3,9 @@ function formatString(string, maxLength = 40) {
     string = string.slice(0, maxLength) + "...";
   }
   return string;
+  //второй вариант решения
+  // return (string =
+  //   string.length > maxLength ? string.slice(0, maxLength) + "..." : string);
 }
 console.log("Curabitur ligula sapien, tincidunt non.".length);
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
