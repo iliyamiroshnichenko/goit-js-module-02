@@ -26,10 +26,10 @@ function addLogin(allLogins, login) {
   const ERROR = "Ошибка! Логин должен быть размером от 4 до 16 символов";
   let message;
   // Write code under this line
-  if (isLoginValid(login) === false) {
+  if (!isLoginValid(login)) {
     return (message = ERROR);
   }
-  if (isLoginUnique(allLogins, login) === false) {
+  if (!isLoginUnique(allLogins, login)) {
     return (message = REFUSAL);
   }
   allLogins.push(login);
