@@ -10,6 +10,8 @@ function reduceArray(array) {
   return total;
 }
 
+// const reduceArray = array => array.reduce((sum, item) => sum += item, 0);
+
 console.log(reduceArray([1, 2, 3]));
 // 6
 

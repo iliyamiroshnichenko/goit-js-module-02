@@ -7,6 +7,7 @@ function mapArray(array) {
   }
   return numbers;
 }
+// const mapArray = (array) => array.map(i => i * 10);
 
 console.log(mapArray([-2, 0, 2]));
 // [-20, 0, 20]

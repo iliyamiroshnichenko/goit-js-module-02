@@ -1,23 +1,9 @@
-function isLoginValid(login, min = 4, max = 16) {
-  // let result = false;
-  // if (login.length >= min && login.length <= max) {
-  //   result = true;
-  // }
-  // return result;
-  let result;
-  return (result = login.length >= min && login.length <= max ? true : false);
-}
+const isLoginValid = (login, min = 4, max = 16) => 
+ login.length >= min && login.length <= max;
 
-function isLoginUnique(allLogins, login) {
-  "use strict";
-  // let result = true;
-  // if (allLogins.includes(login)) {
-  //     result = false;
-  // }
-  // return result;
-  let result;
-  return (result = allLogins.includes(login) ? false : true);
-}
+
+const isLoginUnique = (allLogins, login) => !allLogins.includes(login);
+
 
 function addLogin(allLogins, login) {
   "use strict";

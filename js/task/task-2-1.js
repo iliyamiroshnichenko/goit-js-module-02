@@ -7,6 +7,11 @@ const getItemsString = function (array) {
   return result;
 };
 
+// const getItemsString = function (array) {
+//   "use strict";
+//   return array.reduce((acc, value, i) => acc + `${i + 1} - ${value}\n`, "");
+// };
+
 console.log(getItemsString(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']));
 /*
 '1 - Mango
